@@ -11,8 +11,8 @@ export class NearestPoint {
     constructor(
         private svg: SVGLayer,
         private options: ResolvedCoreOptions,
-        private model: RenderModel,
-        private pModel: NearestPointModel
+        public model: RenderModel,
+        public pModel: NearestPointModel
     ) {
         const initTrans = svg.svgNode.createSVGTransform();
         initTrans.setTranslate(0, 0);
